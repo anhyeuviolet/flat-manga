@@ -1,0 +1,20 @@
+#display {
+position:absolute;
+background: #ffffff;
+opacity: 0.9;
+width: 24%;
+}
+
+.navbar-right{
+width:25%;
+}
+.navbar-right-1{
+float: right;
+}
+#box{
+margin:0 0 20px 0;
+text-align:justify;
+}
+input[type=text]{
+width:117%;
+}

@@ -1,0 +1,35 @@
+	Options All -Indexes
+	
+	RewriteEngine on
+	RewriteRule ^index.html$ index.php
+	
+	RewriteRule ^contact.html$ index.php?view=contact
+	
+	RewriteRule ^list.html$ index.php?view=list
+	RewriteRule ^danh-sach.html$ index.php?view=list
+	
+	RewriteRule ^list-genre-(.*).html$ index.php?view=list&fill=genre&genre=$1
+	RewriteRule ^danh-sach-the-loai-(.*).html$ index.php?view=list&fill=genre&genre=$1
+	
+	RewriteRule ^list-completed.html$ index.php?view=list&status=1
+	RewriteRule ^list-on-going.html$ index.php?view=list&status=2
+	RewriteRule ^danh-sach-hoan-thanh.html$ index.php?view=list&status=complete
+	RewriteRule ^danh-sach-dang-tien-hanh.html$ index.php?view=list&status=on-going
+	
+	RewriteRule ^author-(.*).html$ index.php?view=list&author=$1
+	RewriteRule ^artist-(.*).html$ index.php?view=list&artist=$1
+	
+	
+	RewriteRule ^manga-(.*).html$ index.php?view=manga&slug=$1
+	RewriteRule ^truyen-(.*).html$ index.php?view=manga&slug=$1
+	
+	RewriteRule ^read-(.*)-chapter-([0-9]*\.?[0-9]).html$ index.php?view=chapter&slug=$1&chapter=$2
+	RewriteRule ^read-(.*)-chapter-([0-9]*\.?[0-9])-page-([0-9]+).html$ index.php?view=chapter&slug=$1&chapter=$2&page=$3
+	RewriteRule ^read-(.*)-chapter-([0-9]*\.?[0-9])-touch.html$ index.php?view=chapter&slug=$1&chapter=$2&touch=1
+	
+	RewriteRule ^doc-(.*)-chuong-([0-9]*\.?[0-9]).html$ index.php?view=chapter&slug=$1&chapter=$2
+	RewriteRule ^doc-(.*)-chuong-([0-9]*\.?[0-9])-trang-([0-9]+).html$ index.php?view=chapter&slug=$1&chapter=$2&page=$3
+	RewriteRule ^doc-(.*)-chuong-([0-9]*\.?[0-9])-touch.html$ index.php?view=chapter&slug=$1&chapter=$2&touch=1
+	
+	RewriteRule ^admin.html$ index.php?view=admin&sub_view=main
+	

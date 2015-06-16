@@ -1,0 +1,34 @@
+html {
+  height: 120%;
+}
+body {
+  margin: 0;
+  position: relative;
+  height: 100%;
+}
+footer {
+margin: 5em 0;
+}
+footer li {
+margin-right: 1.5em;
+margin-bottom: 1.5em;
+}
+ul.list-unstyled li{ 
+display: inline; 
+}
+#myCarousel{
+margin-top: 50px;
+margin-bottom: 60px;
+height: 300px;
+}
+.chapter-content{
+position: absolute;
+text-align: center;
+width:100%;
+top: 80px;
+}
+.chapter-img{
+max-width:100%; 
+border: 2px solid;
+border-color: #000;
+}
